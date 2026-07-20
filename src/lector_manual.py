@@ -1,4 +1,6 @@
 """
+Proyecto: Eyringpy AI Assistant
+Desarrolladora: Aura Ximena Gómez Heredia
 ================================================================================
   lector_manual.py — LECTURA Y PROCESAMIENTO DEL MANUAL DE EYRINGPY
 ================================================================================
