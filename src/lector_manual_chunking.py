@@ -1,6 +1,8 @@
 """
+Proyecto: Eyringpy AI Assistant
+Desarrolladora: Aura Ximena Gómez Heredia
 ================================================================================
-  lector_manual.py — LECTURA Y PROCESAMIENTO DEL MANUAL DE EYRINGPY
+LECTURA Y PROCESAMIENTO DEL MANUAL DE EYRINGPY Y CHUNKING
 ================================================================================
 Este modulo es el encargado de ACCEDER AL ARCHIVO y EXTRAER SU CONTENIDO.
 """
