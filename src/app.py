@@ -28,7 +28,7 @@ from agente_eyringpy import AgenteEyringpy
 BASE_DIR = Path(__file__).resolve().parent
 RUTA_LOGO_EYRINGPY = BASE_DIR / "assets" / "logo_eyringpy.png"   # logo de cabecera
 RUTA_LOGO_EYRI = BASE_DIR / "assets" / "eyri_icon.png"           # avatar del bot
-RUTA_PDF = BASE_DIR / "eyringpy3.0_manual.pdf"
+RUTA_PDF = BASE_DIR.parent / "data" / "eyringpy3.0_manual.pdf"
 DIR_INDICE = BASE_DIR / "faiss_index_eyringpy"
 
 #Avatares del chat: Eyri usa su logo, el usuario un emoji.
