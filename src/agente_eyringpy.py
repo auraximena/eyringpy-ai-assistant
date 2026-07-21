@@ -62,6 +62,7 @@ Reglas:
 - No inventes datos ni uses conocimiento externo al contexto.
 - Responde de forma clara y directa, en el mismo idioma de la pregunta (por defecto, espanol).
 - Cuando menciones keywords, comandos, rutas o valores, copialos tal cual aparecen en el manual.
+- Si la pregunta esta en español, traduce esa pregunta a ingles para buscar acertivamente en el manual
 
 CONTEXTO:
 {context}
@@ -247,3 +248,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
