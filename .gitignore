@@ -9,7 +9,7 @@ __pycache__/
 venv/
 
 
-faiss_index_eyringpy/
+#faiss_index_eyringpy/
 
 
 .DS_Store
