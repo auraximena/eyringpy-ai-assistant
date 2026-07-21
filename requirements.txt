@@ -1,5 +1,9 @@
-# --- EyringpyAI Assistant - dependencias ---
-# Orquestacion del agente RAG
+# --- Eyri: Asistente IA del manual de eyringpy ---
+
+# Interfaz web
+streamlit>=1.40
+
+# Orquestacion del agente (RAG)
 langchain>=0.3.0
 langchain-community>=0.3.0
 langchain-text-splitters>=0.3.0
@@ -7,15 +11,14 @@ langchain-text-splitters>=0.3.0
 # Modelo de lenguaje y embeddings de Google (Gemini)
 langchain-google-genai>=2.0.0
 
-# Base de datos vectorial (busqueda por similitud, en memoria/local)
+# Base de datos vectorial (busqueda por similitud, local)
 faiss-cpu>=1.8.0
 
 # Lector del documento fuente (el manual viene en PDF)
 pypdf>=4.0.0
 
-# Carga de variables de entorno desde un archivo .env (opcional)
+# Carga de variables de entorno desde el archivo .env
 python-dotenv>=1.0.0
 
-# numpy 2.x es obligatorio en Python 3.13 (numpy 1.x lanza OverflowError al importar).
-# Se fuerza aqui aunque langchain pinee numpy<2.0: el codigo funciona con numpy 2.x.
+# numpy 2.x es obligatorio en Python 3.13 (numpy 1.x lanza OverflowError al importar)
 numpy>=2.1
