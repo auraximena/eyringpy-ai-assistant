@@ -1,10 +1,8 @@
 """
-Proyecto: Eyringpy AI Assistant
-Desarrolladora: Aura Ximena Gómez Heredia
 ================================================================================
-LECTURA Y CHUNKING DEL MANUAL DE EYRINGPY
+  lector_manual.py — LECTURA Y PROCESAMIENTO DEL MANUAL DE EYRINGPY
 ================================================================================
-Este modulo es el encargado de acceder al archivo, extraer su contenido y hacer el chunking.
+Este modulo es el encargado de ACCEDER AL ARCHIVO y EXTRAER SU CONTENIDO.
 """
 #Importación de las librerías.
 #Habilitar la versión actual de python:
