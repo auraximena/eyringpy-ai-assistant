@@ -1,5 +1,3 @@
-# eyringpy-ai-assistant
-Desarrollo de un agente inteligente que responde preguntas de los usuarios basado en el manual de eyringpy.
 <p align="center">
   <img src="src/assets/eyri_icon.png" width="130" alt="Logo de Eyri"/>
 </p>
