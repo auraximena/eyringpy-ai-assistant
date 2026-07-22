@@ -429,28 +429,6 @@ La aplicación está **desplegada y accesible públicamente** en una máquina vi
 | **Networking** | Security List | Regla de entrada TCP `80` desde `0.0.0.0/0` |
 | **Block Volume** | Volumen de arranque | Ubuntu Server 24.04 LTS |
 
-### Arquitectura del despliegue
-
-```mermaid
-flowchart TD
-    U["👤 Usuario<br/>navegador de escritorio o móvil"] -->|"http://163.192.156.14"| SL
-
-    subgraph OCI["Oracle Cloud Infrastructure"]
-        SL["Security List del VCN<br/>ingress TCP 80 · 0.0.0.0/0"]
-
-        subgraph VM["🖥️ Instancia eyri-app · VM.Standard.A1.Flex<br/>Ubuntu 24.04 LTS · Ampere ARM · Always Free"]
-            FW[" iptables<br/>ACCEPT puerto 80"]
-            NG[" nginx :80<br/>proxy inverso + WebSocket"]
-            ST[" Streamlit :8501 (127.0.0.1)<br/>src/app.py · gestionado por systemd"]
-            FA[(" Índice FAISS<br/>77 vectores en disco")]
-        end
-    end
-
-    SL --> FW --> NG --> ST
-    ST <--> FA
-    ST -->|"HTTPS"| G[" Google Gemini API<br/>gemini-2.5-flash"]
-```
-
 ### Decisiones del despliegue
 
 - **Ampere ARM en lugar de x86.** El nivel Always Free ofrece bastante más memoria en las instancias Ampere, y `faiss-cpu` publica ruedas precompiladas para `aarch64`, así que la instalación no requiere compilar nada.
